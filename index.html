@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>THE WEATHER APP</h1>
+
+        <div id="showData">
+            <div id="inputField">
+                <input type="text" id="inputVal">
+                <button id="search" onclick="getSearchData()">search</button>
+            </div>
+        <div id="wheatherInfo">
+            <div id="placeTime">
+                <p class="place"></p>
+                <p class="date"></p>
+            </div>
+            <div id="imgTmp">
+                <div class="img-container">
+                    <img src="" alt="image">
+                </div>
+                <p></p>
+                <span></span>
+            </div>
+            <div id="allInfo">
+                <div id="humidity" class="show">
+                    <div class="icon-image">
+                        <img src="./public/humidity.png" alt="humidity">
+                    </div>
+                    <p>Humidity</p>
+                    <span></span>
+                </div>
+
+                <div id="pressure" class="show">
+                    <div class="icon-image">
+                        <img src="./public/pressure.png" alt="pressure">
+                    </div>
+                    <p>Pressure</p>
+                    <span></span>
+                </div>
+
+                <div id="wind" class="show">
+                    <div class="icon-image">
+                        <img src="./public/wind.png" alt="wind">
+                    </div>
+                    <p>wind</p>
+                    <span></span>
+                </div>
+
+                <div id="visibility" class="show">
+                    <div class="icon-image">
+                        <img src="./public/visibility.png" alt="visibility">
+                    </div>
+                    <p>Visibility</p>
+                    <span></span>
+                </div>
+
+                <div id="maxTemp" class="show">
+                    <div class="icon-image">
+                        <img src="./public/max.png" alt="max">
+                    </div>
+                    <p>Maxi temp</p>
+                    <span></span>
+                </div>
+            </div>
+            <div id="forcast"></div>
+        </div>
+        </div>
+
+        <!-- Details Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img src="./public/notfound.png" alt="notfound">
+            <h3>Not found</h3>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>

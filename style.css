@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin: 10px 0px;
+}
+#showData{
+    width: 42%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    margin: 20px auto 0px;
+    border-radius: 20px;
+    background: #22C1C3;
+    background: linear-gradient(173deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+#inputField{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#inputField > input{
+    width:40%;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+#inputField > input:focus {
+  outline: none;
+}
+#inputField > button{
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+#inputField > button:hover{
+    background-color: #FDFBD4 ;
+}
+#placeTime{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#placeTime > p{
+    font-size: 24px;
+}
+#imgTmp{
+    width: 27%;
+    text-align: center;
+    margin: 0 auto;
+}
+#imgTmp >.img-container{
+    width: 100%;
+    height: 130px;
+}
+#imgTmp >.img-container > img{
+    width: 100%;
+    height: 100%;
+}
+#imgTmp > p{
+    font-size: 28px;
+    color: #fff;
+}
+#imgTmp > span{
+    font-size: 28px;
+    color: #fff;
+}
+#allInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.show{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+} 
+.show > p{
+    font-size: 20px;
+}
+.show > span{
+    font-size: 17px;
+}
+.icon-image{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.icon-image > img{
+    width: 100%;
+    height: 100%;
+}
+#forcast{
+    display: flex;
+    flex-wrap: wrap;
+}
+.forecast-card{
+    width: 16%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    margin: 10px;
+}
+.forecast-card > .img-container{
+     width: 100%;
+}
+.forecast-card > .img-container > img{
+     width: 100%;
+}
+
+/* modal */
+.modal {
+        display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .close {
+            color: red;
+            float: right;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+@media screen and (max-width:440px){
+    #showData{
+        width: 100%;
+        border-radius: 0px;
+    }
+    #inputField{
+        margin-bottom: 30px;
+    }
+    #inputField > input{
+        width:80%;
+    }
+    #placeTime{
+        margin-bottom: 20px;
+    }
+    #imgTmp{
+        margin-bottom: 25px;
+    }
+    #allInfo{
+        flex-wrap: wrap;
+        justify-content: normal;
+    }
+    .forecast-card{
+        width: 25%;
+    }
+    .modal-content{
+        margin: 40% auto 0;
+    }
+}
